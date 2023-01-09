@@ -11,7 +11,7 @@ class UserDetail(
 //
 //    }
 
-    //No Kotlin quando se tem apenas um retono em uma linha, como e o caso abaixo, apenas =null e o suficiente.
+    //No Kotlin ao ter apenas um retono numa linha, como e o caso abaixo, apenas =null e o suficiente.
     override fun getAuthorities() = usuario.role
 
     override fun getPassword() = usuario.password
