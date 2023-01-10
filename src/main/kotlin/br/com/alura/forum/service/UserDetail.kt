@@ -7,11 +7,6 @@ class UserDetail(
     private val usuario: Usuario
     ) : UserDetails{
 
-    //    override fun getAuthorities(): MutableCollection<out GrantedAuthority> {
-//
-//    }
-
-    //No Kotlin ao ter apenas um retono numa linha, como e o caso abaixo, apenas =null e o suficiente.
     override fun getAuthorities() = usuario.role
 
     override fun getPassword() = usuario.password

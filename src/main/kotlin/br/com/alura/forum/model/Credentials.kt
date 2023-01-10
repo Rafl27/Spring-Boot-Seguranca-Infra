@@ -1,4 +1,6 @@
 package br.com.alura.forum.model
 
-class Credentials {
-}
+data class Credentials(
+    val username: String = "",
+    val password: String = ""
+)
